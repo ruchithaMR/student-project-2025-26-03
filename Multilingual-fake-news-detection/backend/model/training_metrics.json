@@ -1,0 +1,47 @@
+{
+  "model_name": "distilbert-base-multilingual-cased",
+  "num_labels": 2,
+  "device": "NVIDIA GeForce RTX 2050",
+  "training_config": {
+    "epochs": 3,
+    "batch_size": 16,
+    "learning_rate": 2e-05,
+    "weight_decay": 0.01,
+    "max_length": 512,
+    "padding": "max_length",
+    "truncation": true,
+    "fp16": true,
+    "bf16": false,
+    "dataloader_workers": 0
+  },
+  "train_metrics": {
+    "train_runtime": 7676.0417,
+    "train_samples_per_second": 25.836,
+    "train_steps_per_second": 1.615,
+    "total_flos": 2.6271066968856576e+16,
+    "train_loss": 0.16930395897529554,
+    "epoch": 3.0
+  },
+  "validation_metrics": {
+    "eval_loss": 0.24346165359020233,
+    "eval_accuracy": 0.9170549202315403,
+    "eval_precision": 0.9115405070023046,
+    "eval_recall": 0.883808869027157,
+    "eval_f1": 0.8974605113884283,
+    "eval_runtime": 96.9048,
+    "eval_samples_per_second": 146.185,
+    "eval_steps_per_second": 9.143,
+    "epoch": 3.0
+  },
+  "test_metrics": {
+    "test_loss": 0.24812352657318115,
+    "test_accuracy": 0.9152901313002965,
+    "test_precision": 0.9114397719173201,
+    "test_recall": 0.8791680990030939,
+    "test_f1": 0.89501312335958,
+    "test_runtime": 95.7415,
+    "test_samples_per_second": 147.961,
+    "test_steps_per_second": 9.254,
+    "epoch": 3.0
+  }
+}
